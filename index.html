@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KI Platform — Modern Concept</title>
+  <meta name="description" content="Modern concept inspired by kisearch.ch with modules, market filters, expandable gallery, and payment anchors (PayPal/TWINT)." />
+  <link rel="preload" as="image" href="assets/img/ph-1.svg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#"><span class="brand-mark">KI</span><span class="brand-text">Platform</span></a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+        <ul id="menu" class="menu">
+          <li><a href="#modulos">Modules</a></li>
+          <li><a href="#galeria">Gallery</a></li>
+          <li><a href="checkout.html">Payments</a></li>
+          <li class="dropdown"><button class="dropbtn" aria-haspopup="true" aria-expanded="false">All modules</button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#m-empresas">Companies</a></li>
+              <li><a href="#m-shop">Shop</a></li>
+              <li><a href="#m-clasificados">Classifieds</a></li>
+              <li><a href="#m-subastas">Auctions</a></li>
+              <li><a href="#m-ofertas">Offers</a></li>
+              <li><a href="#m-empleos">Jobs</a></li>
+              <li><a href="#m-myjob">MyJob</a></li>
+              <li><a href="#m-dating">Dating</a></li>
+              <li><a href="#m-18">+18</a></li>
+              <li><a href="#m-lujo">Luxury</a></li>
+              <li><a href="#m-modelos">Models</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Highlights">
+    <div class="slider" data-autoplay="true" data-interval="4500">
+      <div class="slides">
+        <div class="slide"><img loading="eager" src="assets/img/ph-1.svg" alt="Slide 1" /></div>
+        <div class="slide"><img loading="lazy" src="assets/img/ph-2.svg" alt="Slide 2" /></div>
+        <div class="slide"><img loading="lazy" src="assets/img/ph-3.svg" alt="Slide 3" /></div>
+      </div>
+      <button class="prev" aria-label="Previous">‹</button>
+      <button class="next" aria-label="Next">›</button>
+      <div class="dots" aria-hidden="true"></div>
+    </div>
+    <div class="hero-copy">
+      <h1>Platform with <span class="brand-grad">33 modules</span></h1>
+      <p>A modern, fast and extensible concept inspired by kisearch.ch, with payment integration, market filters and a consistent experience.</p>
+      <a class="btn primary" href="#modulos">See modules</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="modulos" class="modules-section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Modules</h2>
+          <p>Link modules through the <strong>Market Indicator</strong> (filters) or treat them with their own requirements when needed.</p>
+        </header>
+
+        <div class="filters" role="toolbar" aria-label="Market filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="negocios">Business</button>
+          <button class="chip" data-filter="marketplace">Marketplace</button>
+          <button class="chip" data-filter="empleo">Jobs</button>
+          <button class="chip" data-filter="social">Social</button>
+          <button class="chip" data-filter="premium">Premium</button>
+        </div>
+
+        <div class="modules-grid" id="modulesGrid">
+          <!-- Each card gets categories in data-cats for cross-linking via market indicator -->
+          <article class="module-card" id="m-empresas" data-cats="negocios">
+            <h3>Companies</h3>
+            <p>Directory with verified profiles, reviews and map.</p>
+            <a class="card-cta" href="#" aria-label="Ir a Companies">View</a>
+          </article>
+          <article class="module-card" id="m-shop" data-cats="marketplace premium">
+            <h3>Shop</h3>
+            <p>Catalog and cart. Ready for PayPal and TWINT (via PSP).</p>
+            <a class="card-cta" href="#" aria-label="Go to Shop">View</a>
+          </article>
+          <article class="module-card" id="m-clasificados" data-cats="marketplace">
+            <h3>Classifieds</h3>
+            <p>Post and find ads by category and city.</p>
+            <a class="card-cta" href="#" aria-label="Ir a Classifieds">View</a>
+          </article>
+          <article class="module-card" id="m-subastas" data-cats="marketplace premium">
+            <h3>Auctions</h3>
+            <p>Bid in real time with anti-sniping protection.</p>
+            <a class="card-cta" href="#" aria-label="Ir a Auctions">View</a>
+          </article>
+          <article class="module-card" id="m-ofertas" data-cats="negocios">
+            <h3>Offers</h3>
+            <p>Request quotes and compare by SLA/price.</p>
+            <a class="card-cta" href="#" aria-label="Ir a Offers">View</a>
+          </article>
+          <article class="module-card" id="m-empleos" data-cats="empleo">
+            <h3>Jobs</h3>
+            <p>Job board, application with CV and filters.</p>
+            <a class="card-cta" href="#" aria-label="Ir a Jobs">View</a>
+          </article>
+          <article class="module-card" id="m-myjob" data-cats="empleo">
+            <h3>MyJob</h3>
+            <p>Candidate panel with alerts and tracking.</p>
+            <a class="card-cta" href="#" aria-label="Go to MyJob">View</a>
+          </article>
+          <article class="module-card" id="m-dating" data-cats="social">
+            <h3>Dating</h3>
+            <p>Viewified profiles, chat and local events.</p>
+            <a class="card-cta" href="#" aria-label="Go to Dating">View</a>
+          </article>
+          <article class="module-card" id="m-18" data-cats="social premium">
+            <h3>+18 / Ads</h3>
+            <p>Age-restricted access and content controls.</p>
+            <a class="card-cta" href="#" aria-label="Go to +18">View</a>
+          </article>
+          <article class="module-card" id="m-lujo" data-cats="premium marketplace">
+            <h3>Luxury</h3>
+            <p>Curated catalog of premium products/services.</p>
+            <a class="card-cta" href="#" aria-label="Ir a Luxury">View</a>
+          </article>
+          <article class="module-card" id="m-modelos" data-cats="social premium">
+            <h3>Models</h3>
+            <p>Profiles with measurements and <strong>booking calendar</strong>.</p>
+            <a class="card-cta" href="#" aria-label="Ir a Models">View</a>
+          </article>
+        </div>
+
+      <aside class="note">
+  <strong>Technical note:</strong> Some modules (e.g., <em>Models</em>) require their own requirements (measurements, booking calendar, ID verification). This concept separates those dependencies without breaking the market indicator.
+</aside>
+      </div>
+    </section>
+
+    <section id="galeria" class="gallery-section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Gallery (expandable by you)</h2>
+          <p>Explore the gallery. Click any image to enlarge.</p>
+        </header>
+        <div class="gallery-grid">
+          <img src="assets/img/ph-4.svg" alt="Gallery 1" class="zoomable" />
+          <img src="assets/img/ph-5.svg" alt="Gallery 2" class="zoomable" />
+          <img src="assets/img/ph-6.svg" alt="Gallery 3" class="zoomable" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+       <p>Concept inspired by <a href="https://www.kisearch.ch" target="_blank" rel="noopener">kisearch.ch</a>. This demo is only for contest purposes.</p>
+    <nav aria-label="Legal">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Image modal for zoom -->
+  <dialog id="imgModal" class="img-modal">
+    <img id="modalImg" alt="Enlarged image" />
+    <button id="closeModal" class="btn ghost" aria-label="Close">Close</button>
+  </dialog>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
